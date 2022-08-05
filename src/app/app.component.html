@@ -1,0 +1,5 @@
+<button (click)="startPlay()" [disabled]="isStartPlay">start</button>
+<button (click)="stopPlay()" [disabled]="!isStartPlay">play</button>
+<div *ngFor="let audio of recordings">
+  <a (click)="playAudio(audio)">recording</a>
+</div>
